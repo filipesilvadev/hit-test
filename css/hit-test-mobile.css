@@ -1,0 +1,36 @@
+@media (max-width: 415px) {
+	.main-wrapp {
+		padding: 50px 0;
+	}
+
+	.hit-digital-logo {
+		margin: 0 0 30px 0;
+	}
+
+
+	.primary-menu{
+		flex-direction: column;
+		margin: 0 0 40px 0;
+	}
+
+	.primary-menu button {
+		margin: 0 0 10px;
+	}
+
+	#intro-section .content-wrapp p {
+		text-align: center;
+	}
+
+	#form-section .personal-data {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	#form-section .personal-data input {
+		margin: 0 0 15px;
+	}
+
+	#form-section form input[type="submit"] {
+		min-height: 40px;
+	}
+}

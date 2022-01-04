@@ -1,0 +1,223 @@
+/*Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+/*Main Style*/
+body{
+	color: #fff;
+	background: #373735;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main-wrapp {
+	max-width: 1280px;
+	box-sizing: border-box;
+	width: 95%;
+	display: block;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content article{
+	width: 100%;
+}
+
+.primary-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hit-digital-logo {
+	display: inline-block;
+	width: 160px;
+	height: 61px;
+	font-size: 0;
+	background: url('../img/hit-digital-logo.svg');
+	margin: 0 0 60px 0;
+}
+
+.primary-menu {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 50px 0;
+}
+
+
+.primary-menu button {
+	cursor: pointer;
+	padding: 13px;
+    min-width: 200px;
+    margin: 0 8.5px;
+    font-size: 12px;
+    font-weight: 200;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	border: 0;
+	transition: 0.3s;
+	background: rgba(234,145,107,1);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	background: -moz-linear-gradient(top, rgba(234,145,107,1) 0%, rgba(224,90,77,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(234,145,107,1)), color-stop(100%, rgba(224,90,77,1)));
+	background: -webkit-linear-gradient(top, rgba(234,145,107,1) 0%, rgba(224,90,77,1) 100%);
+	background: -o-linear-gradient(top, rgba(234,145,107,1) 0%, rgba(224,90,77,1) 100%);
+	background: -ms-linear-gradient(top, rgba(234,145,107,1) 0%, rgba(224,90,77,1) 100%);
+	background: linear-gradient(to bottom, rgba(234,145,107,1) 0%, rgba(224,90,77,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea916b', endColorstr='#e05a4d', GradientType=0 );
+}
+
+
+
+
+
+.tab-content {
+	display: none;
+	animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+	from {opacity: 0}
+	to   {opacity: 1}
+}
+
+
+.content-title {
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.content-title::after {
+	content: "";
+	display: block;
+	height: 6px;
+	margin: 6px 0 0;
+	background: url('../img/hit-divisor.svg')no-repeat center;
+}
+
+
+
+#intro-section .content-wrapp{
+	max-width: 780px;
+	padding: 40px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	background: #EA916B;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16);
+}
+
+#intro-section .content-wrapp p {
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+#form-section form {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	max-width: 680px;
+	padding: 40px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	background: #EA916B;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16);
+}
+
+/*Form Style*/
+
+#form-section .content-title {
+	display: block;	
+	margin: 0 auto 30px;
+	max-width: 89px;
+
+}
+
+
+#form-section .personal-data {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 16px;
+}
+
+#form-section form input[type="text"],
+#form-section form input[type="mail"] {
+	width: 100%;
+	max-width: 291px;
+	border: 0;
+	box-sizing: border-box;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#form-section form input:nth-child(1){
+	margin-right:10px
+}
+
+#form-section form input,
+#form-section form textarea {
+	font-size: 13px;
+	padding: 16px;
+}
+
+#form-section form input::placeholder,
+#form-section form textarea::placeholder {
+	color: #999999;
+}
+
+#form-section form textarea {
+	font-family: 'Montserrat', sans-serif;
+	border:0 ;
+	margin: 0 0 22px;
+	height: 200px;
+	resize: none;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	box-sizing: border-box;
+}
+
+#form-section form input[type="submit"] {
+	width: 160px;
+	margin: 0 auto;
+	display: inline-block;
+	background: #373735;
+	color: #fff;
+	cursor: pointer;
+	border: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	padding: 13px;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+}
+
+
+
+
+
+
